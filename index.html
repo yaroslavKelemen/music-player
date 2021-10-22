@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="block-music-1">
+            <img src="https://i.ibb.co/gz8dJ5M/avengers-01.jpg" alt="avengers-01" class="background">
+            <div class="text">
+                <div class="music__title" id="title">The Avengers</div>
+                <div class="music__author" id="author">Alan Silvestri</div>
+            </div>
+            <div class="music__image"></div>
+            <div class="music">
+                <input type="range" class='player' min="0" max="100" value="0" step="1">
+            </div>
+            <div class="control-btns">
+                <div class="download">
+                    <a href="https://mezzoforte.ru/s/artist/308418-alan_silvestri_the_avengers.mp3" download="" class="downloadBtn">
+                        <svg class="downloadIcon">
+                            <use href="#download"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="play">
+                    <svg class="playIcon">
+                        <use href="#play"></use>
+                    </svg>
+                    <svg class="pauseIcon">
+                        <use href="#pause"></use>
+                    </svg>
+                </div>
+                <div class="next">
+                    <svg class="nextIcon">
+                        <use href="#next"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SVG icons -->
+    <svg display="none">
+        <symbol id="play" viewBox="0 0 512 512">
+            <path d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"/>
+        </symbol>
+    </svg>
+
+    <svg display="none">
+        <symbol id="download" viewBox="0 0 64 64">
+            <g data-name="Layer 4" id="Layer_4"><path d="M60,37.71H56.27a.5.5,0,0,0-.5.5V55.6H8.23V38.21a.5.5,0,0,0-.5-.5H4a.5.5,0,0,0-.5.5V59.83a.5.5,0,0,0,.5.5H60a.5.5,0,0,0,.5-.5V38.21A.5.5,0,0,0,60,37.71Z"/><path d="M31.64,48.18a.51.51,0,0,0,.72,0L49,31.22a.5.5,0,0,0,.14-.35.47.47,0,0,0-.15-.35l-2.63-2.59a.49.49,0,0,0-.7,0L34.34,39.48V4a.5.5,0,0,0-.5-.5H30.16a.5.5,0,0,0-.5.5V39.48L18.31,27.94a.49.49,0,0,0-.7,0L15,30.52a.47.47,0,0,0-.15.35.5.5,0,0,0,.14.35Z"/></g>
+        </symbol>
+    </svg>
+
+    <svg display="none">
+        <symbol id="pause" viewBox="0 0 48 48">
+            <path d="M12 38h8V10h-8v28zm16-28v28h8V10h-8z"/><path d="M0 0h48v48H0z" fill="none"/>
+        </symbol>
+    </svg>
+
+    <svg display="none">
+        <symbol id="next" viewBox="0 0 100 100">
+            <path d="M95,51.4L52.2,75.9c-1.3,0.8-3.2-0.2-3.2-1.7V51.9l-41.2,24C6.4,76.7,5,75.7,5,74.2V25.1c0-1.5,1.4-2.5,2.8-1.7l41.2,24  V25.1c0-1.5,1.9-2.5,3.2-1.7l42.6,24.5C96.2,48.7,96.3,50.6,95,51.4z"/>
+        </symbol>
+    </svg>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
